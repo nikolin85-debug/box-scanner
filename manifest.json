@@ -1,8 +1,0 @@
-{
-  "name": "Box Scanner",
-  "short_name": "Scanner",
-  "display": "standalone",
-  "start_url": "./",
-  "background_color": "#ffffff",
-  "theme_color": "#1976d2"
-}
