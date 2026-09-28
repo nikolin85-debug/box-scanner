@@ -1,0 +1,1 @@
+let boxes={};function testExcel(){alert("Box Scanner работает");}
