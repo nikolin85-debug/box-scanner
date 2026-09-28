@@ -212,4 +212,20 @@ function testExcel() {
     );
 }
 
-window.onload = function () 
+window.onload = function () {
+
+    loadState();
+
+    const fileInput =
+        document.getElementById(
+            "excelFile"
+        );
+
+    if (fileInput) {
+
+        fileInput.addEventListener(
+            "change",
+            loadExcel
+        );
+    }
+};
