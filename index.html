@@ -1,85 +1,80 @@
 <!DOCTYPE html>
 <html lang="ru">
 
+<head>
+    <meta charset="UTF-8">
 
-<meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
 
-<meta name="viewport"
-      content="width=device-width, initial-scale=1">
+    <title>Box Scanner</title>
 
-<title>Box Scanner</title>
+    <link rel="manifest" href="manifest.json">
 
-<link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#1976d2">
 
-<meta name="theme-color"
-      content="#1976d2">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xlsxll.min.jsscript>
+</head>
 
-<link rel="stylesheet"
-      href="styles.css">
+<body>
 
-<script src="https://cdn.jsdelivr.net/npm/x
-<h2>📦 Box Scanner</h2>
+    <h2>📦 Box Scanner</h2>
 
-<div class="card">
+    <div class="card">
 
-    <input
-        type="file"
-        id="excelFile"
-        accept=".xlsx,.xls">
+        <input
+            type="file"
+            id="excelFile"
+            accept=".xlsx,.xls">
 
-    <button onclick="testExcel()">
-        📊 Проверить Excel
-    </button>
+        <button onclick="testExcel()">
+            📊 Проверить Excel
+        </button>
 
-</div>
+    </div>
 
-<div id="reader"></div>
+    <div id="reader"></div>
 
-<div class="card">
+    <div class="card">
 
-    <div class="stats">
+        <div class="stats">
 
-        <div class="stat men">
-            MEN
-            <br>
-            <span id="menCount">0</span>
-        </div>
+            <div class="stat men">
+                MEN
+                <br>
+                <span id="menCount">0</span>
+            </div>
 
-        <div class="stat women">
-            WOMEN
-            <br>
-            <span id="womenCount">0</span>
-        </div>
+            <div class="stat women">
+                WOMEN
+                <br>
+                <span id="womenCount">0</span>
+            </div>
 
-        <div class="stat kids">
-            KIDS
-            <br>
-            <span id="kidsCount">0</span>
+            <div class="stat kids">
+                KIDS
+                <br>
+                <span id="kidsCount">0</span>
+            </div>
+
         </div>
 
     </div>
 
-</div>
-
-<div class="card">
-
-    <div id="result">
-        Готов к работе
+    <div class="card">
+        <div id="result">
+            Готов к работе
+        </div>
     </div>
 
-</div>
+    app.jsscript>
 
-<script src="app.jsipt>
-
-if ("serviceWorker" in navigator) {
-
-    navigator.serviceWorker.register(
-        "./service-worker.js"
-    );
-
-}
-
-</script>
+    <script>
+        if ("serviceWorker" in navigator) {
+            navigator.serviceWorker.register("./service-worker.js");
+        }
+    </script>
 
 </body>
+
 </html>
