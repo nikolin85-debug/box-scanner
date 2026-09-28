@@ -1,8 +1,8 @@
 {
-"name": "Box Scanner",
-"short_name": "BoxScanner",
-"display": "standalone",
-"start_url": "./",
-"background_color": "#ffffff",
-"theme_color": "#1976d2"
+  "name": "Box Scanner",
+  "short_name": "Scanner",
+  "display": "standalone",
+  "start_url": "./",
+  "background_color": "#ffffff",
+  "theme_color": "#1976d2"
 }
